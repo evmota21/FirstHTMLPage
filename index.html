@@ -99,5 +99,67 @@
             </tr>
         </tbody>
     </table>
+    <form>                                                <!--Inserción de un form-->
+        <fieldset>
+          <legend>
+            Title of form
+          </legend>
+          <label>
+            Select a country
+          </label>
+          <select id="country" name="country">
+            <option value="MX">
+              México
+            </option>
+            <option value="FR">
+              France
+            </option>
+          </select>
+          <div>
+          <label for="user-name">                                            <!--Estructura para campo de input de text-->
+            Username:
+          </label>
+          <input type="text" id="user-name" class="info" name="user"/>        <!--Utilizamos los atributos de clase y name para un mejor manejo de cada objeto-->
+          </div>
+          <div>
+            <input type="password"/>
+          </div>
+          <div>
+            <label for="range_1">
+              From 10 - 20
+            </label>
+            <input type="checkbox" value="10_20" id="range_1" name="age.range"/>
+          </div>
+          <div>
+            <label for="range_2">
+              From 20 - 30
+            </label>
+            <input type="checkbox" name="age.range" id="range_2" value="21_30"/>      <!--Cuando trabajamos con un grupo de "checkboxes", HAY QUE DARLE MISMO NOMBRE-->
+          </div>
+          <div>
+            <label for="male">
+              Male
+            </label>
+            <input type="radio" id="gender_1" name="gender"/>
+          </div>
+          <div>
+            <label for="female">
+              Female
+            </label>
+            <input type="radio" id="gender_2" name="gender"/>
+          </div>
+          <div>
+            <textarea name="comment"> <!--Area de comentarios o texto-->
+    
+            </textarea>
+          </div>
+          <div>
+            <!--input type="submit" value="submit"/-->
+            <button type="submit"> <!--Botón de submit, para entregar la información-->
+              Submit
+            </button>
+          </div>
+        </fieldset>
+      </form>
 </body>
 </html>
